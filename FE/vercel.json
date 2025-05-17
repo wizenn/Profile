@@ -1,17 +1,8 @@
 {
-    "builds": [
+    "rewrites": [
         {
-            "src": "FE/package.json",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "FE/build"
-            }
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/FE/build/$1"
+            "source": "/(.*)",
+            "destination": "/"
         }
     ]
 }
