@@ -6,9 +6,17 @@
             "config": {
                 "distDir": "FE/build"
             }
+        },
+        {
+            "src": "api/**/*.js",
+            "use": "@vercel/node"
         }
     ],
     "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "/api/$1"
+        },
         {
             "src": "/(.*)",
             "dest": "/FE/build/$1"
