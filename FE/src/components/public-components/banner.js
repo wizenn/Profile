@@ -41,10 +41,10 @@ const Banner = () => {
 
             {/* Góc phải: icon mạng xã hội */}
             <div className="absolute right-5 bottom-20 flex flex-col gap-6 text-white text-xl">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+                <a href="https://www.facebook.com/mquis.03" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
                     <FaFacebookF />
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                <a href="https://github.com/wizenn" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                     <FaGithub />
                 </a>
                 <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
