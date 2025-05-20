@@ -1,15 +1,16 @@
 import React from 'react';
-import { FaFacebookF, FaGithub } from 'react-icons/fa';
+import { FaArrowLeft, FaFacebookF, FaGithub } from 'react-icons/fa';
 
 const About = () => {
     return (
         <div className="relative w-full min-h-screen flex flex-col bg-black text-white bg-cover bg-center p-6">
-            <div className="fixed top-4 right-4 z-50 text-white rounded-full p-2 shadow-md hover:bg-gray-800 transition">
+            <div className="fixed top-4 right-4 z-50 text-white md:text-white rounded-full p-2 shadow-md hover:bg-gray-800 transition">
                 <a href="/" className="flex items-center space-x-2">
-                    <img src={require('../../assets/back.png')} alt="back" className="w-6 h-6 text-white" />
+                    <FaArrowLeft className="w-5 h-5 text-white" />
                     <span className="hidden md:inline text-sm font-medium">Back</span>
                 </a>
             </div>
+
 
             <div className="text-center mt-4">
                 <p className="text-gray-400">Get to know me</p>
@@ -38,7 +39,7 @@ const About = () => {
                     <h3>From: <span>Tien Giang, Viet Nam</span></h3>
                     <div className='flex items-center gap-4 mt-4'>
                         <a href="/minhqui_cv.pdf" download>
-                            <button className='bg-orange-400 text-black font-semibold px-4 py-2 rounded-xl shadow-md hover:bg-orange-500 transition'>Download CV</button>
+                            <button className='bg-orange-200 text-black font-semibold px-4 py-2 rounded-xl shadow-md hover:bg-orange-500 transition'>Download CV</button>
                         </a>
                         <a href="https://www.facebook.com/mquis.03" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 text-2xl">
                             <FaFacebookF />

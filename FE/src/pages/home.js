@@ -1,5 +1,7 @@
 import Banner from "../components/public-components/banner";
-import Navbar from "../components/public-components/navbar";
+import Navbar from '../components/public-components/navbar';
+
+
 
 const Home = () => {
     return (
