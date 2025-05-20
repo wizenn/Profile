@@ -4,7 +4,6 @@ import { Typewriter } from 'react-simple-typewriter'
 const Banner = () => {
     return (
         <div className="relative h-screen  bg-black text-white">
-            {/* Góc trái: VIE/ENG dọc */}
             <div
                 className="absolute left-2 top-1/2 -translate-y-1/2 text-white text-base tracking-widest"
                 style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
@@ -13,7 +12,6 @@ const Banner = () => {
                 <span className="cursor-pointer block">ENG</span>
             </div>
 
-            {/* để chữ chạy npm install react-simple-typewriter */}
 
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4">
                 <h1 className="text-4xl md:text-6xl text-white font-bold">Minh Quis</h1>
@@ -32,15 +30,14 @@ const Banner = () => {
                 </p>
             </div>
 
-            {/* Ảnh nhân vật căn phải, cover toàn vùng */}
+
             <img
                 src={require('../../assets/mquis.png')}
                 alt="banner"
                 className="absolute right-12 bottom-0 h-full object-cover object-right z-0 opacity-90"
             />
 
-            {/* Góc phải: icon mạng xã hội */}
-            <div className="absolute right-5 bottom-20 flex flex-col gap-6 text-white text-xl">
+            <div className="absolute right-5 bottom-20 flex flex-col gap-6 text-white text-xl z-50">
                 <a href="https://www.facebook.com/mquis.03" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
                     <FaFacebookF />
                 </a>

@@ -13,11 +13,11 @@ const About = () => {
 
 
             <div className="text-center mt-4">
-                <p className="text-gray-400">Get to know me</p>
-                <h1 className="text-4xl font-bold mt-2">About Me</h1>
+                <p className="text-gray-400 font-bold">Get to know me</p>
+                <h1 className="text-6xl font-bold mt-4">About Me</h1>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-10 px-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-20 px-4">
                 <img src={require('../../assets/about.jpg')} alt="about" className="w-full md:w-1/2 max-w-md rounded-xl shadow-md" />
                 <div className="md:w-1/2 space-y-4">
                     <h2 className="text-2xl font-semibold">Who am I?</h2>
