@@ -12,9 +12,10 @@ const Home = () => {
             <div>
                 <Navbar />
             </div>
-            <div className="pt-14 " key={i18n.language}>
+            <div className="pt-14" key={i18n.language}>
                 <Banner />
             </div>
+
 
 
         </div>

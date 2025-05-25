@@ -14,25 +14,10 @@ const Banner = () => {
     };
 
     useEffect(() => {
-        const updateRoles = () => {
-            const translatedRoles = t('roles', { returnObjects: true });
-            if (Array.isArray(translatedRoles)) {
-                setRoles(translatedRoles);
-            } else {
-                setRoles([]);
-            }
-        };
-
-        updateRoles();
-
-
-        i18n.on('languageChanged', updateRoles);
-
-
-        return () => {
-            i18n.off('languageChanged', updateRoles);
-        };
-    }, [i18n, t]);
+        const translatedRoles = t('roles', { returnObjects: true });
+        setRoles(translatedRoles);
+    }, [i18n.language, t]);
+    ;
 
     return (
         <div className="relative h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
