@@ -7,32 +7,32 @@ import { FaFacebookF, FaGithub, FaInstagram, FaTiktok, FaAdjust } from 'react-ic
 const Banner = () => {
     const { toggleTheme } = useTheme();
     const { t, i18n } = useTranslation('banner');
-
     const [roles, setRoles] = useState([]);
-    const [typewriterKey, setTypewriterKey] = useState(0);
-
-    useEffect(() => {
-        // Cập nhật thủ công khi ngôn ngữ thay đổi
-        i18n.reloadResources(i18n.language, 'banner').then(() => {
-            const translatedRoles = i18n.t('roles', { returnObjects: true, lng: i18n.language });
-            console.log("typeof translatedRoles", typeof translatedRoles);
-            console.log("translatedRoles", translatedRoles);
-            setRoles(translatedRoles);
-            setTypewriterKey(prev => prev + 1);
-        });
-    }, [i18n.language]);
-
-
-
-
 
     const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng).catch(console.error);
+        i18n.changeLanguage(lng);
     };
-    console.log('Language:', i18n.language);
-    console.log('Roles in state:', roles);
-    console.log('Component re-rendered!');
 
+    useEffect(() => {
+        const updateRoles = () => {
+            const translatedRoles = t('roles', { returnObjects: true });
+            if (Array.isArray(translatedRoles)) {
+                setRoles(translatedRoles);
+            } else {
+                setRoles([]);
+            }
+        };
+
+        updateRoles();
+
+
+        i18n.on('languageChanged', updateRoles);
+
+
+        return () => {
+            i18n.off('languageChanged', updateRoles);
+        };
+    }, [i18n, t]);
 
     return (
         <div className="relative h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
@@ -47,10 +47,9 @@ const Banner = () => {
                 <h1 className="text-4xl md:text-6xl font-bold">Minh Quis</h1>
                 <p className="text-lg md:text-2xl mt-4">
                     {t("intro")}{' '}
-                    {Array.isArray(roles) && roles.length > 0 && (
+                    {roles.length > 0 && (
                         <Typewriter
                             key={i18n.language}
-
                             words={roles}
                             loop={0}
                             cursor
@@ -60,10 +59,8 @@ const Banner = () => {
                             delaySpeed={1500}
                         />
                     )}
-
                     {' '}{t("followup")}
                 </p>
-
             </div>
 
             <img src={require('../../assets/mquis.png')} alt="banner" className="absolute right-12 bottom-0 h-full object-cover object-right z-0 opacity-90" />
