@@ -1,0 +1,11 @@
+{
+    "name": "Minh Quis",
+    "intro": "I'm a",
+    "roles": [
+        " Developer.",
+        " Freelancer."
+    ],
+    "followup": "What about you?",
+    "language_vi": "VI",
+    "language_en": "EN"
+}

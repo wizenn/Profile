@@ -1,0 +1,17 @@
+{
+    "back": "Back",
+    "intro_title": "Get to know me",
+    "title": "About Me",
+    "who_title": "Who am I?",
+    "who_text_1": "I'm Minh Qui, a young and passionate Front-End Developer with a strong interest in modern web technologies. After graduating with a degree in Information Technology, I decided to focus on front-end development, especially building clean, responsive interfaces.",
+    "who_text_2": "In addition to my academic background, I actively self-learned tools like ReactJS, TailwindCSS, and Figma to support my development workflow. Currently, I also work as a freelancer, creating websites for individuals and small businesses. I enjoy transforming designs into real, interactive web experiences that are accessible, fast, and user-friendly across all devices.",
+    "name": "Name",
+    "email": "Email",
+    "dob": "Dob",
+    "from": "From",
+    "download_cv": "Download CV",
+    "experience_title": "What experience do I have?",
+    "experience_text_1": "I had the opportunity to intern at VNPower Technology Co., Ltd., where I worked on real production-level projects as a Front-End Intern. My responsibilities included developing interfaces from Figma designs using ReactJS and TailwindCSS, as well as integrating APIs to dynamically render backend data.",
+    "experience_text_2": "One of the key projects I contributed to was the development of a warehouse management web application. This system allowed users to manage inventory, track incoming and outgoing goods, and view detailed reports. I built core UI components such as the product list, category filters, and dashboard charts, and collaborated closely with back-end developers to ensure smooth API integration and real-time updates.",
+    "experience_text_3": "Through this experience, I improved my technical skills and gained insights into how software products are built and delivered in real-world team environments."
+}

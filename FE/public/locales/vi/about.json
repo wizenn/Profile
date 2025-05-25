@@ -1,0 +1,17 @@
+{
+    "back": "Quay lại",
+    "intro_title": "Làm quen với tôi",
+    "title": "Giới thiệu",
+    "who_title": "Tôi là ai?",
+    "who_text_1": "Tôi là Minh Quí, một lập trình viên Front-End trẻ và đam mê với công nghệ web hiện đại. Sau khi tốt nghiệp chuyên ngành Công nghệ Thông tin, tôi quyết định theo đuổi phát triển giao diện người dùng, đặc biệt là xây dựng các giao diện sạch sẽ và phản hồi tốt.",
+    "who_text_2": "Bên cạnh nền tảng học tập, tôi chủ động tự học các công cụ như ReactJS, TailwindCSS và Figma để hỗ trợ quá trình phát triển. Hiện tại, tôi còn làm freelancer, xây dựng website cho cá nhân và doanh nghiệp nhỏ. Tôi yêu thích việc biến những thiết kế thành trải nghiệm web thực tế, tương tác, nhanh và thân thiện với người dùng trên mọi thiết bị.",
+    "name": "Tên",
+    "email": "Email",
+    "dob": "Năm sinh",
+    "from": "Đến từ",
+    "download_cv": "Tải CV",
+    "experience_title": "Tôi có kinh nghiệm gì?",
+    "experience_text_1": "Tôi từng thực tập tại Công ty TNHH Công nghệ VNPower, nơi tôi tham gia các dự án thực tế với vai trò Front-End Intern. Tôi chịu trách nhiệm phát triển giao diện từ thiết kế Figma bằng ReactJS và TailwindCSS, đồng thời tích hợp API để hiển thị dữ liệu động từ backend.",
+    "experience_text_2": "Một trong những dự án chính tôi tham gia là xây dựng ứng dụng quản lý kho. Hệ thống cho phép người dùng quản lý hàng tồn kho, theo dõi nhập xuất và xem báo cáo chi tiết. Tôi xây dựng các thành phần UI như danh sách sản phẩm, bộ lọc danh mục và biểu đồ dashboard, đồng thời phối hợp chặt chẽ với backend để đảm bảo tích hợp API mượt mà và cập nhật thời gian thực.",
+    "experience_text_3": "Qua trải nghiệm này, tôi nâng cao kỹ năng kỹ thuật và hiểu hơn về cách phần mềm được xây dựng và triển khai trong môi trường nhóm thực tế."
+}
