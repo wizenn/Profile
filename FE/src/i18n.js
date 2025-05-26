@@ -27,6 +27,9 @@ i18n
             useSuspense: false,
         },
         cleanCode: true,
+
+
+        returnObjects: true
     });
 
 export default i18n;

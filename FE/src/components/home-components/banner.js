@@ -10,14 +10,21 @@ const Banner = () => {
     const [roles, setRoles] = useState([]);
 
     const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
+        i18n.changeLanguage(lng).then(() => {
+            console.log('Language changed to', i18n.language);
+        });
     };
 
     useEffect(() => {
-        const translatedRoles = t('roles', { returnObjects: true });
-        setRoles(translatedRoles);
-    }, [i18n.language, t]);
-    ;
+        const update = () => {
+            setRoles(t('roles', { returnObjects: true }));
+        };
+
+        update();
+        i18n.on('languageChanged', update);
+        return () => i18n.off('languageChanged', update);
+    }, [i18n, t]);
+
 
     return (
         <div className="relative h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
