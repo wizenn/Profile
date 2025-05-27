@@ -6,42 +6,22 @@ import { FaFacebookF, FaGithub, FaInstagram, FaTiktok, FaAdjust } from 'react-ic
 
 const Banner = () => {
     const { toggleTheme } = useTheme();
-    const { t, i18n } = useTranslation('banner');
-    const [roles, setRoles] = useState([]);
-
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng).then(() => {
-            console.log('Language changed to', i18n.language);
-        });
-    };
-
-    useEffect(() => {
-        const update = () => {
-            setRoles(t('roles', { returnObjects: true }));
-        };
-
-        update();
-        i18n.on('languageChanged', update);
-        return () => i18n.off('languageChanged', update);
-    }, [i18n, t]);
-
-
+    const roles = ['Lập trình viên.', 'Freelancer.'];
     return (
         <div className="relative h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
             <div className="absolute left-2 top-1/2 -translate-y-1/2 text-current text-base tracking-widest" style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
                 <div className='flex ml-20 gap-5'>
-                    <button onClick={() => changeLanguage('vi')}>{t('language_vi')}</button>
-                    <button onClick={() => changeLanguage('en')}>{t('language_en')}</button>
+                    <button >VI</button>
+                    <button >EN</button>
                 </div>
             </div>
 
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4">
                 <h1 className="text-4xl md:text-6xl font-bold">Minh Quis</h1>
                 <p className="text-lg md:text-2xl mt-4">
-                    {t("intro")}{' '}
+                    {"I'm a"}{' '}
                     {roles.length > 0 && (
                         <Typewriter
-                            key={i18n.language}
                             words={roles}
                             loop={0}
                             cursor
@@ -50,8 +30,8 @@ const Banner = () => {
                             deleteSpeed={50}
                             delaySpeed={1500}
                         />
-                    )}
-                    {' '}{t("followup")}
+                    )}{' '}
+                    What about you?
                 </p>
             </div>
 
