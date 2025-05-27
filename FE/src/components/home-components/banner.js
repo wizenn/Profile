@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import { useTranslation } from 'react-i18next';
 import { useTheme } from '../public-components/themeprovider';
 import { FaFacebookF, FaGithub, FaInstagram, FaTiktok, FaAdjust } from 'react-icons/fa';
 
@@ -11,8 +10,8 @@ const Banner = () => {
         <div className="relative h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
             <div className="absolute left-2 top-1/2 -translate-y-1/2 text-current text-base tracking-widest" style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
                 <div className='flex ml-20 gap-5'>
-                    <button >VI</button>
-                    <button >EN</button>
+                    <button >VIET NAM</button>
+                    <button >ENG</button>
                 </div>
             </div>
 
