@@ -1,5 +1,4 @@
 
-import { useTranslation } from 'react-i18next';
 import Banner from '../components/home-components/banner';
 import Navbar from '../components/public-components/navbar';
 
